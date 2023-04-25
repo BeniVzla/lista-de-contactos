@@ -35,3 +35,11 @@ function eliminarContacto(nombreCompleto) {
   
   // Mostrar los contactos en la consola
 console.log(listaDeContactos);
+
+
+function editarContacto(nombre, contactoActualizado) {
+  let indice = listaDeContactos.indexOf(nombre);
+  listaDeContactos.splice(indice, 1, contactoActualizado);
+}
+editarContacto("Jose Lopez", "Jose B. Lopez");
+console.log(listaDeContactos);
